@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Road to Doomsday</title>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+<div class="starfield"></div>
+
+<div id="loginScreen" class="login-screen">
+    <div class="login-card">
+        <h2>Login to Road to Doomsday</h2>
+        <p class="login-text">Enter your username and password to continue your MCU watch journey.</p>
+        <input id="loginUsername" type="text" placeholder="Username">
+        <input id="loginPassword" type="password" placeholder="Password">
+        <button id="loginButton" class="login-button">Login</button>
+    </div>
+</div>
+
+<div id="appContent">
+<header class="hero">
+    <div class="hero-content">
+        <div class="login-status hidden">
+            <span>Logged in as <strong id="userNameDisplay"></strong></span>
+            <button id="logoutButton" class="logout-button">Logout</button>
+        </div>
+
+        <p class="subtitle">THE MARVEL CINEMATIC UNIVERSE</p>
+
+        <h1>ROAD TO<br><span>DOOMSDAY</span></h1>
+
+        <p class="description">
+            Your journey through the Marvel Cinematic Universe.
+        </p>
+
+        <a href="#movies" class="start-button">
+            START THE JOURNEY
+        </a>
+    </div>
+</header>
+
+<section class="countdown">
+    <p class="section-label">THE DESTINATION</p>
+    <h2>AVENGERS: DOOMSDAY</h2>
+
+    <div class="timer">
+        <div>
+            <span id="days">--</span>
+            <small>DAYS</small>
+        </div>
+
+        <div>
+            <span id="hours">--</span>
+            <small>HOURS</small>
+        </div>
+
+        <div>
+            <span id="minutes">--</span>
+            <small>MINUTES</small>
+        </div>
+
+        <div>
+            <span id="seconds">--</span>
+            <small>SECONDS</small>
+        </div>
+    </div>
+</section>
+
+<section class="progress-section">
+
+    <p class="section-label">YOUR JOURNEY</p>
+
+    <h2>MCU WATCH PROGRESS</h2>
+
+    <div class="progress-bar">
+        <div class="progress-fill"></div>
+    </div>
+
+    <div class="progress-info">
+        <span id="progressCount">0 / 38 movies watched</span>
+        <span id="progressPercent">0%</span>
+    </div>
+
+</section>
+
+<section id="movies" class="movies-section">
+
+    <p class="section-label">THE JOURNEY</p>
+
+    <h2>MCU MOVIES</h2>
+
+    <div id="movieContainer" class="movie-grid"></div>
+
+</section>
+
+<footer>
+    <h2>ROAD TO DOOMSDAY</h2>
+    <p>Your personal MCU watch tracker.</p>
+</footer>
+
+<div class="social-links">
+    <a href="https://www.linkedin.com/in/hemanth-garugu-218b09288/" target="_blank" rel="noopener noreferrer">
+        <span class="social-icon linkedin">in</span>
+        <span>LinkedIn</span>
+    </a>
+    <a href="https://github.com/Hemanthgarugu" target="_blank" rel="noopener noreferrer">
+        <span class="social-icon github">GH</span>
+        <span>GitHub</span>
+    </a>
+    <a href="https://t.me/hemanth039" target="_blank" rel="noopener noreferrer">
+        <span class="social-icon telegram">TG</span>
+        <span>Telegram</span>
+    </a>
+</div>
+
+<script src="/app.js"></script>
+</body>
+</html>
